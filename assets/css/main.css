@@ -2498,7 +2498,7 @@ input, select, textarea {
 		}
 
 /* Box */
-
+	
 	.box img {
 		max-width: 100%; /* 設置圖片寬度最大為父元素的100% */
 		height: auto; /* 讓瀏覽器自動計算高度，以保持圖片比例 */
