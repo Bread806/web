@@ -2191,6 +2191,7 @@ input, select, textarea {
 	ul.links {
 		list-style: none;
 		padding-left: 0;
+		/* text-align: right;	 */
 	}
 
 		ul.links li {
@@ -2817,7 +2818,7 @@ input, select, textarea {
 			vertical-align: middle;
 			margin: 0;
 		}
-
+		
 		#cta header .button {
 			vertical-align: middle;
 			margin-left: 1em;
@@ -2826,7 +2827,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 4em 0 8em 0;
+		padding: 2em 0 2em 0;
 	}
 
 		#footer a {
@@ -2940,7 +2941,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding: 3em 0 3em 0;
+				padding: 2em 0 2em 0;
 			}
 
 				#footer .container {
@@ -2981,6 +2982,7 @@ input, select, textarea {
 			}
 
 			h1, h2, h3, h4, h5, h6 {
+				padding-top: 0.2em;
 				margin-bottom: 0.5em;
 			}
 
@@ -3007,7 +3009,8 @@ input, select, textarea {
 			.box.highlight {
 				text-align: left;
 				position: relative;
-				padding-left: 7em;
+				padding-left: 0.2em;
+				padding-right: 0.2em;
 			}
 
 				.box.highlight i {
@@ -3113,14 +3116,14 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background-color: #333;
+				background-color: #E25E3E;
 				background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 				background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 				background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 				background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 				height: 44px;
 				line-height: 44px;
-				box-shadow: 0 4px 0 0 #37c0fb;
+				/* box-shadow: 0 4px 0 0 #FFBB5C; */
 			}
 
 				#titleBar .title {
@@ -3290,6 +3293,7 @@ input, select, textarea {
 			}
 
 			h3 {
+				padding-top: 1em 		;
 				font-size: 1em;
 				letter-spacing: 0;
 				line-height: 1.35em;
@@ -3369,7 +3373,9 @@ input, select, textarea {
 		/* Box */
 
 			.box.highlight {
-				padding-left: calc(4em + 30px);
+				/* padding-left: calc(4em + 30px); */
+				padding-left: 0.2em;
+				padding-right: 0.2em;
 			}
 
 			.box.post .inner {
