@@ -2195,9 +2195,15 @@ input, select, textarea {
 	}
 
 		ul.links li {
-			line-height: 2.5em;
+			line-height: 1.5em;
 			padding-left: 0;
 		}
+	.phone {
+		display: inline-block;
+		width: 120px; /* custom width */
+	}
+		
+		
 
 /* Icons */
 
@@ -2560,7 +2566,7 @@ input, select, textarea {
 
 	#nav {
 		cursor: default;
-		background-color: #FA7070;
+		background-color: #fa7070;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
