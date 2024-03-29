@@ -2028,7 +2028,7 @@ input, select, textarea {
 		}
 		.gallery a img {
 			justify-content: space-between;
-			max-width: 30%; /* 圖片與容器最大寬度 */
+			max-width: 25%; /* 圖片與容器最大寬度 */
     		height: auto; /* 保持圖片比例 */
 		}
 	
