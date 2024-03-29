@@ -31,7 +31,11 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	/* display: flex; */
 }
+/* * {
+	transition: all 0.3s;
+} */
 
 ol, ul {
 	list-style: none;
@@ -105,6 +109,7 @@ input, select, textarea {
 		line-height: 1.65em;
 	}
 
+	hr
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
@@ -113,12 +118,14 @@ input, select, textarea {
 		color: #37c0fb;
 		text-decoration: none;
 		border-bottom: dotted 1px;
+		display: inline-block;
 	}
 
 		a:hover {
 			color: #37c0fb;
 			border-bottom-color: transparent;
 		}
+
 
 	strong, b {
 		font-weight: 600;
@@ -154,6 +161,7 @@ input, select, textarea {
 		letter-spacing: -0.025em;
 	}
 
+
 	h3 {
 		font-size: 1.2em;
 		letter-spacing: -0.025em;
@@ -173,7 +181,7 @@ input, select, textarea {
 
 	hr {
 		border-top: solid 1px #e0e0e0;
-		border: 0;
+		border: 3;
 		margin-bottom: 1.5em;
 	}
 
@@ -184,11 +192,13 @@ input, select, textarea {
 	}
 
 /* Container */
-
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
 		width: 1400px;
+	}
+	.container.right{
+		position: relative; 
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -238,6 +248,8 @@ input, select, textarea {
 			}
 
 		}
+
+
 
 /* Row */
 
@@ -1957,13 +1969,16 @@ input, select, textarea {
 	section.special, article.special {
 		text-align: center;
 	}
-
+	header h2{
+		text-align: center;
+	}
 	header p {
 		color: #999;
 		font-size: 1.25em;
 		position: relative;
 		margin-top: -1.25em;
 		margin-bottom: 2.25em;
+		text-align: center
 	}
 
 	header.major {
@@ -1996,6 +2011,70 @@ input, select, textarea {
 		footer.major {
 			padding-top: 3em;
 		}
+	
+	.section.gallery{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+		margin: 0 0 2em 0;
+		overflow: hidden;
+		width: 100%;
+	}
+		.gallery a {
+			flex: 1; /* 均勻佔據 */
+			margin: 0 5px; /* 水平間距 */
+			/* display: flex; */
+		}
+		.gallery a img {
+			justify-content: space-between;
+			max-width: 30%; /* 圖片與容器最大寬度 */
+    		height: auto; /* 保持圖片比例 */
+		}
+	
+	span:target > img {
+		opacity: 1;
+	  }
+	  span > img {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+		pointer-events: none;
+		width: 90vw;
+		height: calc(100vh - 6rem);
+		object-fit: contain;
+		z-index: 2;
+	  }
+	  span > img:target::after {
+		content: "";
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5); 
+		z-index: 999;
+		}
+	  
+	  span:target ~ #close {
+		display: block;
+	  }
+	  
+	  span:target ~ section {
+		filter: opacity(0.2) blur(10px);
+	  }
+	  #close {
+		display: none;
+		position: fixed;
+		right: 1em;
+		top: 1em;
+		color: #000000;
+		text-decoration: none;
+		font-size: 2rem;
+	  }
+
 
 /* Form */
 
@@ -2100,11 +2179,12 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			margin: 0 0 2em 0;
+			overflow: hidden;
 		}
 
 			.image.featured img {
 				display: block;
-				width: 100%;
+				/* width: 100%; */
 			}
 
 /* Icon */
@@ -2811,6 +2891,11 @@ input, select, textarea {
 				.wrapper.style3 .button:hover {
 					color: #37c0fb !important;
 				}
+
+		.wrapper.style4{
+			background: #fff;
+			/* margin-right: 5em; */
+		}
 
 /* CTA */
 
