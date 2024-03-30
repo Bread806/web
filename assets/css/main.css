@@ -29,7 +29,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-body {
+body { 
 	line-height: 1;
 	/* display: flex; */
 }
@@ -2035,25 +2035,10 @@ input, select, textarea {
 			padding-top: 3em;
 		}
 	
-	.section.gallery{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		gap: 1rem;
-		margin: 0 0 2em 0;
-		overflow: hidden;
-		width: 100%;
+	.gallery{
+		text-align: center;
 	}
-		.gallery a {
-			flex: 1; /* 均勻佔據 */
-			margin: 0 5px; /* 水平間距 */
-			/* display: flex; */
-		}
-		.gallery a img {
-			justify-content: space-between;
-			max-width: 30%; /* 圖片與容器最大寬度 */
-    		height: auto; /* 保持圖片比例 */
-		}
+	
 	
 	span:target > img {
 		opacity: 1;
