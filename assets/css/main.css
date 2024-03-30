@@ -200,11 +200,24 @@ input, select, textarea {
 	.container.right{
 		position: relative; 
 	}
+		@media screen and (min-width: 1681px) {
+
+			.container {
+				width: 1200px;
+			}
+			a img{
+				max-width: 30%;
+			}
+
+		}
 
 		@media screen and (max-width: 1680px) {
 
 			.container {
 				width: 1200px;
+			}
+			a img{
+				max-width: 30%;
 			}
 
 		}
@@ -214,7 +227,9 @@ input, select, textarea {
 			.container {
 				width: 960px;
 			}
-
+			a img{
+				max-width: 30%;
+			}
 		}
 
 		@media screen and (max-width: 980px) {
@@ -222,7 +237,9 @@ input, select, textarea {
 			.container {
 				width: 95%;
 			}
-
+			a img{
+				max-width: 30%;
+			}
 		}
 
 		@media screen and (max-width: 840px) {
@@ -230,7 +247,9 @@ input, select, textarea {
 			.container {
 				width: 95%;
 			}
-
+			a img{
+				max-width: 30%;
+			}
 		}
 
 		@media screen and (max-width: 736px) {
@@ -238,7 +257,9 @@ input, select, textarea {
 			.container {
 				width: 90%;
 			}
-
+			a img{
+				max-width: 30%;
+			}
 		}
 
 		@media screen and (max-width: 480px) {
@@ -246,7 +267,9 @@ input, select, textarea {
 			.container {
 				width: 100%;
 			}
-
+			a img{
+				max-width: 30%;
+			}
 		}
 
 
@@ -2028,7 +2051,7 @@ input, select, textarea {
 		}
 		.gallery a img {
 			justify-content: space-between;
-			max-width: 25%; /* 圖片與容器最大寬度 */
+			max-width: 30%; /* 圖片與容器最大寬度 */
     		height: auto; /* 保持圖片比例 */
 		}
 	
@@ -2148,6 +2171,9 @@ input, select, textarea {
 		position: relative;
 		border-radius: 5px;
 	}
+		.image.footer{
+			width: 80%;
+		}
 
 		.image img {
 			display: block;
@@ -2971,7 +2997,9 @@ input, select, textarea {
 			#banner {
 				height: 24em;
 			}
-
+		
+		/* img */
+			
 	}
 
 /* Normal */
@@ -3039,6 +3067,11 @@ input, select, textarea {
 					margin-bottom: 1em;
 				}
 
+		/* img */
+			a img{
+				max-width: 30%;
+			}
+
 	}
 
 /* Narrow */
@@ -3051,7 +3084,10 @@ input, select, textarea {
 				font-size: 12pt;
 				line-height: 1.5em;
 			}
-
+		/* img */
+			a img{
+				max-width: 30%;
+			}
 	}
 
 /* Narrower */
@@ -3364,6 +3400,10 @@ input, select, textarea {
 				transform: translateX(0);
 			}
 
+			/* img */
+			a img{
+				max-width: 30%;
+			}
 	}
 
 /* Mobile */
@@ -3431,6 +3471,10 @@ input, select, textarea {
 				padding: 2em 0 1px 0;
 			}
 
+		/* img */
+			a img{
+				max-width: 30%;
+			}
 	}
 
 /* Mobile (Portrait) */
@@ -3438,6 +3482,16 @@ input, select, textarea {
 	@media screen and (max-width: 480px) {
 
 		/* Icon */
+			a img {
+				display: block;
+				margin: 1em auto;
+				max-width: 80%;
+
+			}	
+			/* .gallery a img{
+				height: auto;
+				width: 100%;
+			} */
 
 			.icon.major {
 				width: 4em;
